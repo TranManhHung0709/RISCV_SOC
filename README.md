@@ -6,3 +6,5 @@ There are 2 wrapper
 + v2 consists of the v1 but integrated a simple add IP and an addr_decoder to redirect the data to the correct place (DMEM/IP). I did this for better understanding of how multiple IP work togother
 
 There are 2 vitis file for 2 wrapper accordingly (v1/v2)
+
+There are 2 .xsa file ready if u want to run the design using zedboard  
