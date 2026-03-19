@@ -1,0 +1,53 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "soc_riscv_v2_addr_decoder_0_0",
+    "cell_name": "addr_decoder_0",
+    "component_reference": "xilinx.com:module_ref:addr_decoder:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../RISCV_SOC.gen/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_addr_decoder_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "soc_riscv_v2_addr_decoder_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "avnet.com:zedboard:part0:1.4" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../RISCV_SOC.gen/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_addr_decoder_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "cpu_addr": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "cpu_we": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "dmem_dout": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "ip_dout": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "cpu_read_data": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "dmem_real_addr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "dmem_en": [ { "direction": "out" } ],
+        "dmem_we": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "ip_real_addr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ip_en": [ { "direction": "out" } ],
+        "ip_we": [ { "direction": "out", "size_left": "3", "size_right": "0" } ]
+      }
+    }
+  }
+}
