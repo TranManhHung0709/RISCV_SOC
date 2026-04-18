@@ -2,14 +2,14 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Sat Mar 14 22:09:42 2026
+// Date        : Thu Mar 26 23:25:14 2026
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top soc_riscv_v2_axi_lutram_wrapper_1_0 -prefix
-//               soc_riscv_v2_axi_lutram_wrapper_1_0_ soc_riscv_v1_axi_lutram_wrapper_1_0_sim_netlist.v
-// Design      : soc_riscv_v1_axi_lutram_wrapper_1_0
+//               soc_riscv_v2_axi_lutram_wrapper_1_0_ soc_riscv_v2_axi_lutram_wrapper_0_0_sim_netlist.v
+// Design      : soc_riscv_v2_axi_lutram_wrapper_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7z020clg484-1
+// Device      : xck26-sfvc784-2LV-c
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -96,66 +96,54 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
   wire [31:0]p_3_out;
   wire [5:0]p_4_in;
   wire [31:0]p_5_in;
-  wire ram_reg_r1_0_63_0_2_i_12_n_0;
-  wire ram_reg_r1_0_63_0_2_i_13_n_0;
-  wire ram_reg_r1_0_63_0_2_i_14_n_0;
-  wire ram_reg_r1_0_63_12_14_i_4_n_0;
-  wire ram_reg_r1_0_63_12_14_i_5_n_0;
-  wire ram_reg_r1_0_63_12_14_i_6_n_0;
-  wire ram_reg_r1_0_63_15_17_i_4_n_0;
-  wire ram_reg_r1_0_63_24_26_i_4_n_0;
-  wire ram_reg_r1_0_63_24_26_i_5_n_0;
-  wire ram_reg_r1_0_63_24_26_i_6_n_0;
-  wire ram_reg_r1_0_63_27_29_i_4_n_0;
-  wire ram_reg_r1_0_63_27_29_i_5_n_0;
-  wire ram_reg_r1_0_63_27_29_i_6_n_0;
-  wire ram_reg_r1_0_63_30_31_i_3_n_0;
-  wire ram_reg_r1_0_63_30_31_i_4_n_0;
-  wire ram_reg_r1_0_63_3_5_i_4_n_0;
-  wire ram_reg_r1_0_63_3_5_i_5_n_0;
-  wire ram_reg_r1_0_63_3_5_i_6_n_0;
-  wire ram_reg_r1_0_63_6_8_i_4_n_0;
-  wire ram_reg_r1_0_63_6_8_i_5_n_0;
-  wire ram_reg_r1_0_63_6_8_i_6_n_0;
-  wire ram_reg_r1_0_63_9_11_i_4_n_0;
-  wire ram_reg_r1_0_63_9_11_i_5_n_0;
-  wire ram_reg_r1_0_63_9_11_i_6_n_0;
-  wire NLW_ram_reg_r1_0_63_0_2_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_12_14_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_15_17_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_18_20_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_21_23_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_24_26_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_27_29_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_30_31_DOC_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_30_31_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_3_5_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_6_8_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r1_0_63_9_11_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_0_2_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_12_14_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_15_17_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_18_20_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_21_23_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_24_26_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_27_29_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_30_31_DOC_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_30_31_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_3_5_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_6_8_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r2_0_63_9_11_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_0_2_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_12_14_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_15_17_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_18_20_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_21_23_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_24_26_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_27_29_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_30_31_DOC_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_30_31_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_3_5_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_6_8_DOD_UNCONNECTED;
-  wire NLW_ram_reg_r3_0_63_9_11_DOD_UNCONNECTED;
+  wire ram_reg_r1_0_63_0_6_i_16_n_0;
+  wire ram_reg_r1_0_63_0_6_i_17_n_0;
+  wire ram_reg_r1_0_63_0_6_i_18_n_0;
+  wire ram_reg_r1_0_63_0_6_i_19_n_0;
+  wire ram_reg_r1_0_63_0_6_i_20_n_0;
+  wire ram_reg_r1_0_63_0_6_i_21_n_0;
+  wire ram_reg_r1_0_63_0_6_i_22_n_0;
+  wire ram_reg_r1_0_63_14_20_i_8_n_0;
+  wire ram_reg_r1_0_63_14_20_i_9_n_0;
+  wire ram_reg_r1_0_63_21_27_i_11_n_0;
+  wire ram_reg_r1_0_63_21_27_i_12_n_0;
+  wire ram_reg_r1_0_63_21_27_i_13_n_0;
+  wire ram_reg_r1_0_63_21_27_i_14_n_0;
+  wire ram_reg_r1_0_63_28_31_i_5_n_0;
+  wire ram_reg_r1_0_63_28_31_i_6_n_0;
+  wire ram_reg_r1_0_63_28_31_i_7_n_0;
+  wire ram_reg_r1_0_63_28_31_i_8_n_0;
+  wire ram_reg_r1_0_63_7_13_i_10_n_0;
+  wire ram_reg_r1_0_63_7_13_i_11_n_0;
+  wire ram_reg_r1_0_63_7_13_i_12_n_0;
+  wire ram_reg_r1_0_63_7_13_i_13_n_0;
+  wire ram_reg_r1_0_63_7_13_i_14_n_0;
+  wire ram_reg_r1_0_63_7_13_i_8_n_0;
+  wire ram_reg_r1_0_63_7_13_i_9_n_0;
+  wire NLW_ram_reg_r1_0_63_0_6_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_14_20_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_21_27_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_28_31_DOE_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_28_31_DOF_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_28_31_DOG_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_28_31_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r1_0_63_7_13_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_0_6_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_14_20_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_21_27_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_28_31_DOE_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_28_31_DOF_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_28_31_DOG_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_28_31_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r2_0_63_7_13_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_0_6_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_14_20_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_21_27_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_28_31_DOE_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_28_31_DOF_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_28_31_DOG_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_28_31_DOH_UNCONNECTED;
+  wire NLW_ram_reg_r3_0_63_7_13_DOH_UNCONNECTED;
 
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT2 #(
@@ -659,130 +647,53 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(cpu_dout[9]));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "0" *) 
-  (* ram_slice_end = "2" *) 
-  RAM64M ram_reg_r1_0_63_0_2
+  (* ram_slice_end = "6" *) 
+  RAM64M8 ram_reg_r1_0_63_0_6
        (.ADDRA(cpu_addr),
         .ADDRB(cpu_addr),
         .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
+        .ADDRD(cpu_addr),
+        .ADDRE(cpu_addr),
+        .ADDRF(cpu_addr),
+        .ADDRG(cpu_addr),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[0]),
         .DIB(p_5_in[1]),
         .DIC(p_5_in[2]),
-        .DID(1'b0),
+        .DID(p_5_in[3]),
+        .DIE(p_5_in[4]),
+        .DIF(p_5_in[5]),
+        .DIG(p_5_in[6]),
+        .DIH(1'b0),
         .DOA(cpu_dout0[0]),
         .DOB(cpu_dout0[1]),
         .DOC(cpu_dout0[2]),
-        .DOD(NLW_ram_reg_r1_0_63_0_2_DOD_UNCONNECTED),
+        .DOD(cpu_dout0[3]),
+        .DOE(cpu_dout0[4]),
+        .DOF(cpu_dout0[5]),
+        .DOG(cpu_dout0[6]),
+        .DOH(NLW_ram_reg_r1_0_63_0_6_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_0_2_i_1
+    ram_reg_r1_0_63_0_6_i_1
        (.I0(cpu_din[0]),
         .I1(cpu_we[0]),
         .I2(cpu_dout0[0]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_0_2_i_12_n_0),
+        .I4(ram_reg_r1_0_63_0_6_i_16_n_0),
         .O(p_5_in[0]));
   LUT6 #(
     .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_10
-       (.I0(S_AXI_AWADDR[0]),
-        .I1(S_AXI_AWREADY),
-        .I2(S_AXI_WREADY),
-        .I3(S_AXI_WVALID),
-        .I4(S_AXI_AWVALID),
-        .I5(cpu_addr[0]),
-        .O(p_4_in[0]));
-  LUT4 #(
-    .INIT(16'h8000)) 
-    ram_reg_r1_0_63_0_2_i_11
-       (.I0(S_AXI_AWREADY),
-        .I1(S_AXI_WREADY),
-        .I2(S_AXI_WVALID),
-        .I3(S_AXI_AWVALID),
-        .O(p_0_in_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_0_2_i_12
-       (.I0(S_AXI_WDATA[0]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[0]),
-        .O(ram_reg_r1_0_63_0_2_i_12_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_0_2_i_13
-       (.I0(S_AXI_WDATA[1]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[1]),
-        .O(ram_reg_r1_0_63_0_2_i_13_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_0_2_i_14
-       (.I0(S_AXI_WDATA[2]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[2]),
-        .O(ram_reg_r1_0_63_0_2_i_14_n_0));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_0_2_i_2
-       (.I0(cpu_din[1]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[1]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_0_2_i_13_n_0),
-        .O(p_5_in[1]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_0_2_i_3
-       (.I0(cpu_din[2]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[2]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_0_2_i_14_n_0),
-        .O(p_5_in[2]));
-  LUT5 #(
-    .INIT(32'hEAAAAAAA)) 
-    ram_reg_r1_0_63_0_2_i_4
-       (.I0(cpu_en),
-        .I1(S_AXI_AWVALID),
-        .I2(S_AXI_WVALID),
-        .I3(S_AXI_WREADY),
-        .I4(S_AXI_AWREADY),
-        .O(p_1_in));
-  LUT6 #(
-    .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_5
-       (.I0(S_AXI_AWADDR[5]),
-        .I1(S_AXI_AWREADY),
-        .I2(S_AXI_WREADY),
-        .I3(S_AXI_WVALID),
-        .I4(S_AXI_AWVALID),
-        .I5(cpu_addr[5]),
-        .O(p_4_in[5]));
-  LUT6 #(
-    .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_6
-       (.I0(S_AXI_AWADDR[4]),
-        .I1(S_AXI_AWREADY),
-        .I2(S_AXI_WREADY),
-        .I3(S_AXI_WVALID),
-        .I4(S_AXI_AWVALID),
-        .I5(cpu_addr[4]),
-        .O(p_4_in[4]));
-  LUT6 #(
-    .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_7
+    ram_reg_r1_0_63_0_6_i_10
        (.I0(S_AXI_AWADDR[3]),
         .I1(S_AXI_AWREADY),
         .I2(S_AXI_WREADY),
@@ -792,7 +703,7 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_4_in[3]));
   LUT6 #(
     .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_8
+    ram_reg_r1_0_63_0_6_i_11
        (.I0(S_AXI_AWADDR[2]),
         .I1(S_AXI_AWREADY),
         .I2(S_AXI_WREADY),
@@ -802,7 +713,7 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_4_in[2]));
   LUT6 #(
     .INIT(64'hBFFFFFFF80000000)) 
-    ram_reg_r1_0_63_0_2_i_9
+    ram_reg_r1_0_63_0_6_i_12
        (.I0(S_AXI_AWADDR[1]),
         .I1(S_AXI_AWREADY),
         .I2(S_AXI_WREADY),
@@ -810,119 +721,261 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .I4(S_AXI_AWVALID),
         .I5(cpu_addr[1]),
         .O(p_4_in[1]));
+  LUT6 #(
+    .INIT(64'hBFFFFFFF80000000)) 
+    ram_reg_r1_0_63_0_6_i_13
+       (.I0(S_AXI_AWADDR[0]),
+        .I1(S_AXI_AWREADY),
+        .I2(S_AXI_WREADY),
+        .I3(S_AXI_WVALID),
+        .I4(S_AXI_AWVALID),
+        .I5(cpu_addr[0]),
+        .O(p_4_in[0]));
+  LUT5 #(
+    .INIT(32'hEAAAAAAA)) 
+    ram_reg_r1_0_63_0_6_i_14
+       (.I0(cpu_en),
+        .I1(S_AXI_AWVALID),
+        .I2(S_AXI_WVALID),
+        .I3(S_AXI_WREADY),
+        .I4(S_AXI_AWREADY),
+        .O(p_1_in));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    ram_reg_r1_0_63_0_6_i_15
+       (.I0(S_AXI_AWREADY),
+        .I1(S_AXI_WREADY),
+        .I2(S_AXI_WVALID),
+        .I3(S_AXI_AWVALID),
+        .O(p_0_in_0));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_16
+       (.I0(S_AXI_WDATA[0]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[0]),
+        .O(ram_reg_r1_0_63_0_6_i_16_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_17
+       (.I0(S_AXI_WDATA[1]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[1]),
+        .O(ram_reg_r1_0_63_0_6_i_17_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_18
+       (.I0(S_AXI_WDATA[2]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[2]),
+        .O(ram_reg_r1_0_63_0_6_i_18_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_19
+       (.I0(S_AXI_WDATA[3]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[3]),
+        .O(ram_reg_r1_0_63_0_6_i_19_n_0));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_2
+       (.I0(cpu_din[1]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[1]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_17_n_0),
+        .O(p_5_in[1]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_20
+       (.I0(S_AXI_WDATA[4]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[4]),
+        .O(ram_reg_r1_0_63_0_6_i_20_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_21
+       (.I0(S_AXI_WDATA[5]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[5]),
+        .O(ram_reg_r1_0_63_0_6_i_21_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_0_6_i_22
+       (.I0(S_AXI_WDATA[6]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[6]),
+        .O(ram_reg_r1_0_63_0_6_i_22_n_0));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_3
+       (.I0(cpu_din[2]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[2]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_18_n_0),
+        .O(p_5_in[2]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_4
+       (.I0(cpu_din[3]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[3]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_19_n_0),
+        .O(p_5_in[3]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_5
+       (.I0(cpu_din[4]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[4]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_20_n_0),
+        .O(p_5_in[4]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_6
+       (.I0(cpu_din[5]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[5]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_21_n_0),
+        .O(p_5_in[5]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_0_6_i_7
+       (.I0(cpu_din[6]),
+        .I1(cpu_we[0]),
+        .I2(cpu_dout0[6]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_0_6_i_22_n_0),
+        .O(p_5_in[6]));
+  LUT6 #(
+    .INIT(64'hBFFFFFFF80000000)) 
+    ram_reg_r1_0_63_0_6_i_8
+       (.I0(S_AXI_AWADDR[5]),
+        .I1(S_AXI_AWREADY),
+        .I2(S_AXI_WREADY),
+        .I3(S_AXI_WVALID),
+        .I4(S_AXI_AWVALID),
+        .I5(cpu_addr[5]),
+        .O(p_4_in[5]));
+  LUT6 #(
+    .INIT(64'hBFFFFFFF80000000)) 
+    ram_reg_r1_0_63_0_6_i_9
+       (.I0(S_AXI_AWADDR[4]),
+        .I1(S_AXI_AWREADY),
+        .I2(S_AXI_WREADY),
+        .I3(S_AXI_WVALID),
+        .I4(S_AXI_AWVALID),
+        .I5(cpu_addr[4]),
+        .O(p_4_in[4]));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "12" *) 
-  (* ram_slice_end = "14" *) 
-  RAM64M ram_reg_r1_0_63_12_14
+  (* ram_slice_begin = "14" *) 
+  (* ram_slice_end = "20" *) 
+  RAM64M8 ram_reg_r1_0_63_14_20
        (.ADDRA(cpu_addr),
         .ADDRB(cpu_addr),
         .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[12]),
-        .DIB(p_5_in[13]),
-        .DIC(p_5_in[14]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[12]),
-        .DOB(cpu_dout0[13]),
-        .DOC(cpu_dout0[14]),
-        .DOD(NLW_ram_reg_r1_0_63_12_14_DOD_UNCONNECTED),
+        .ADDRD(cpu_addr),
+        .ADDRE(cpu_addr),
+        .ADDRF(cpu_addr),
+        .ADDRG(cpu_addr),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[14]),
+        .DIB(p_5_in[15]),
+        .DIC(p_5_in[16]),
+        .DID(p_5_in[17]),
+        .DIE(p_5_in[18]),
+        .DIF(p_5_in[19]),
+        .DIG(p_5_in[20]),
+        .DIH(1'b0),
+        .DOA(cpu_dout0[14]),
+        .DOB(cpu_dout0[15]),
+        .DOC(cpu_dout0[16]),
+        .DOD(cpu_dout0[17]),
+        .DOE(cpu_dout0[18]),
+        .DOF(cpu_dout0[19]),
+        .DOG(cpu_dout0[20]),
+        .DOH(NLW_ram_reg_r1_0_63_14_20_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_12_14_i_1
-       (.I0(cpu_din[12]),
-        .I1(cpu_we[1]),
-        .I2(cpu_dout0[12]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_12_14_i_4_n_0),
-        .O(p_5_in[12]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_12_14_i_2
-       (.I0(cpu_din[13]),
-        .I1(cpu_we[1]),
-        .I2(cpu_dout0[13]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_12_14_i_5_n_0),
-        .O(p_5_in[13]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_12_14_i_3
+    ram_reg_r1_0_63_14_20_i_1
        (.I0(cpu_din[14]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[14]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_12_14_i_6_n_0),
+        .I4(ram_reg_r1_0_63_14_20_i_8_n_0),
         .O(p_5_in[14]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_12_14_i_4
-       (.I0(S_AXI_WDATA[12]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[12]),
-        .O(ram_reg_r1_0_63_12_14_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+    ram_reg_r1_0_63_14_20_i_10
+       (.I0(S_AXI_WDATA[16]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[16]),
+        .O(p_1_in2_in[16]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_12_14_i_5
-       (.I0(S_AXI_WDATA[13]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[13]),
-        .O(ram_reg_r1_0_63_12_14_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+    ram_reg_r1_0_63_14_20_i_11
+       (.I0(S_AXI_WDATA[17]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[17]),
+        .O(p_1_in2_in[17]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_12_14_i_6
-       (.I0(S_AXI_WDATA[14]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[14]),
-        .O(ram_reg_r1_0_63_12_14_i_6_n_0));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "15" *) 
-  (* ram_slice_end = "17" *) 
-  RAM64M ram_reg_r1_0_63_15_17
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[15]),
-        .DIB(p_5_in[16]),
-        .DIC(p_5_in[17]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[15]),
-        .DOB(cpu_dout0[16]),
-        .DOC(cpu_dout0[17]),
-        .DOD(NLW_ram_reg_r1_0_63_15_17_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
+    ram_reg_r1_0_63_14_20_i_12
+       (.I0(S_AXI_WDATA[18]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[18]),
+        .O(p_1_in2_in[18]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_14_20_i_13
+       (.I0(S_AXI_WDATA[19]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[19]),
+        .O(p_1_in2_in[19]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_14_20_i_14
+       (.I0(S_AXI_WDATA[20]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[20]),
+        .O(p_1_in2_in[20]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_15_17_i_1
+    ram_reg_r1_0_63_14_20_i_2
        (.I0(cpu_din[15]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[15]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_15_17_i_4_n_0),
+        .I4(ram_reg_r1_0_63_14_20_i_9_n_0),
         .O(p_5_in[15]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_15_17_i_2
+    ram_reg_r1_0_63_14_20_i_3
        (.I0(cpu_din[16]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[16]),
@@ -931,65 +984,16 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_5_in[16]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_15_17_i_3
+    ram_reg_r1_0_63_14_20_i_4
        (.I0(cpu_din[17]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[17]),
         .I3(p_0_in_0),
         .I4(p_1_in2_in[17]),
         .O(p_5_in[17]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_15_17_i_4
-       (.I0(S_AXI_WDATA[15]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[15]),
-        .O(ram_reg_r1_0_63_15_17_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_15_17_i_5
-       (.I0(S_AXI_WDATA[16]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[16]),
-        .O(p_1_in2_in[16]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_15_17_i_6
-       (.I0(S_AXI_WDATA[17]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[17]),
-        .O(p_1_in2_in[17]));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "18" *) 
-  (* ram_slice_end = "20" *) 
-  RAM64M ram_reg_r1_0_63_18_20
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[18]),
-        .DIB(p_5_in[19]),
-        .DIC(p_5_in[20]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[18]),
-        .DOB(cpu_dout0[19]),
-        .DOC(cpu_dout0[20]),
-        .DOD(NLW_ram_reg_r1_0_63_18_20_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_18_20_i_1
+    ram_reg_r1_0_63_14_20_i_5
        (.I0(cpu_din[18]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[18]),
@@ -998,7 +1002,7 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_5_in[18]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_18_20_i_2
+    ram_reg_r1_0_63_14_20_i_6
        (.I0(cpu_din[19]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[19]),
@@ -1007,74 +1011,118 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_5_in[19]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_18_20_i_3
+    ram_reg_r1_0_63_14_20_i_7
        (.I0(cpu_din[20]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[20]),
         .I3(p_0_in_0),
         .I4(p_1_in2_in[20]),
         .O(p_5_in[20]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_18_20_i_4
-       (.I0(S_AXI_WDATA[18]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[18]),
-        .O(p_1_in2_in[18]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+    ram_reg_r1_0_63_14_20_i_8
+       (.I0(S_AXI_WDATA[14]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[14]),
+        .O(ram_reg_r1_0_63_14_20_i_8_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_18_20_i_5
-       (.I0(S_AXI_WDATA[19]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[19]),
-        .O(p_1_in2_in[19]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_18_20_i_6
-       (.I0(S_AXI_WDATA[20]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[20]),
-        .O(p_1_in2_in[20]));
+    ram_reg_r1_0_63_14_20_i_9
+       (.I0(S_AXI_WDATA[15]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[15]),
+        .O(ram_reg_r1_0_63_14_20_i_9_n_0));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "21" *) 
-  (* ram_slice_end = "23" *) 
-  RAM64M ram_reg_r1_0_63_21_23
+  (* ram_slice_end = "27" *) 
+  RAM64M8 ram_reg_r1_0_63_21_27
        (.ADDRA(cpu_addr),
         .ADDRB(cpu_addr),
         .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
+        .ADDRD(cpu_addr),
+        .ADDRE(cpu_addr),
+        .ADDRF(cpu_addr),
+        .ADDRG(cpu_addr),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[21]),
         .DIB(p_5_in[22]),
         .DIC(p_5_in[23]),
-        .DID(1'b0),
+        .DID(p_5_in[24]),
+        .DIE(p_5_in[25]),
+        .DIF(p_5_in[26]),
+        .DIG(p_5_in[27]),
+        .DIH(1'b0),
         .DOA(cpu_dout0[21]),
         .DOB(cpu_dout0[22]),
         .DOC(cpu_dout0[23]),
-        .DOD(NLW_ram_reg_r1_0_63_21_23_DOD_UNCONNECTED),
+        .DOD(cpu_dout0[24]),
+        .DOE(cpu_dout0[25]),
+        .DOF(cpu_dout0[26]),
+        .DOG(cpu_dout0[27]),
+        .DOH(NLW_ram_reg_r1_0_63_21_27_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_21_23_i_1
+    ram_reg_r1_0_63_21_27_i_1
        (.I0(cpu_din[21]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[21]),
         .I3(p_0_in_0),
         .I4(p_1_in2_in[21]),
         .O(p_5_in[21]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_21_27_i_10
+       (.I0(S_AXI_WDATA[23]),
+        .I1(S_AXI_WSTRB[2]),
+        .I2(p_3_out[23]),
+        .O(p_1_in2_in[23]));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_21_27_i_11
+       (.I0(S_AXI_WDATA[24]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[24]),
+        .O(ram_reg_r1_0_63_21_27_i_11_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_21_27_i_12
+       (.I0(S_AXI_WDATA[25]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[25]),
+        .O(ram_reg_r1_0_63_21_27_i_12_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_21_27_i_13
+       (.I0(S_AXI_WDATA[26]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[26]),
+        .O(ram_reg_r1_0_63_21_27_i_13_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_21_27_i_14
+       (.I0(S_AXI_WDATA[27]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[27]),
+        .O(ram_reg_r1_0_63_21_27_i_14_n_0));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_21_23_i_2
+    ram_reg_r1_0_63_21_27_i_2
        (.I0(cpu_din[22]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[22]),
@@ -1083,17 +1131,53 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
         .O(p_5_in[22]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_21_23_i_3
+    ram_reg_r1_0_63_21_27_i_3
        (.I0(cpu_din[23]),
         .I1(cpu_we[2]),
         .I2(cpu_dout0[23]),
         .I3(p_0_in_0),
         .I4(p_1_in2_in[23]),
         .O(p_5_in[23]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_21_27_i_4
+       (.I0(cpu_din[24]),
+        .I1(cpu_we[3]),
+        .I2(cpu_dout0[24]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_21_27_i_11_n_0),
+        .O(p_5_in[24]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_21_27_i_5
+       (.I0(cpu_din[25]),
+        .I1(cpu_we[3]),
+        .I2(cpu_dout0[25]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_21_27_i_12_n_0),
+        .O(p_5_in[25]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_21_27_i_6
+       (.I0(cpu_din[26]),
+        .I1(cpu_we[3]),
+        .I2(cpu_dout0[26]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_21_27_i_13_n_0),
+        .O(p_5_in[26]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_21_27_i_7
+       (.I0(cpu_din[27]),
+        .I1(cpu_we[3]),
+        .I2(cpu_dout0[27]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_21_27_i_14_n_0),
+        .O(p_5_in[27]));
   (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_21_23_i_4
+    ram_reg_r1_0_63_21_27_i_8
        (.I0(S_AXI_WDATA[21]),
         .I1(S_AXI_WSTRB[2]),
         .I2(p_3_out[21]),
@@ -1101,1011 +1185,645 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0_axi_lutram_wrapper
   (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_21_23_i_5
+    ram_reg_r1_0_63_21_27_i_9
        (.I0(S_AXI_WDATA[22]),
         .I1(S_AXI_WSTRB[2]),
         .I2(p_3_out[22]),
         .O(p_1_in2_in[22]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_21_23_i_6
-       (.I0(S_AXI_WDATA[23]),
-        .I1(S_AXI_WSTRB[2]),
-        .I2(p_3_out[23]),
-        .O(p_1_in2_in[23]));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "24" *) 
-  (* ram_slice_end = "26" *) 
-  RAM64M ram_reg_r1_0_63_24_26
+  (* ram_slice_begin = "28" *) 
+  (* ram_slice_end = "31" *) 
+  RAM64M8 ram_reg_r1_0_63_28_31
        (.ADDRA(cpu_addr),
         .ADDRB(cpu_addr),
         .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[24]),
-        .DIB(p_5_in[25]),
-        .DIC(p_5_in[26]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[24]),
-        .DOB(cpu_dout0[25]),
-        .DOC(cpu_dout0[26]),
-        .DOD(NLW_ram_reg_r1_0_63_24_26_DOD_UNCONNECTED),
+        .ADDRD(cpu_addr),
+        .ADDRE(cpu_addr),
+        .ADDRF(cpu_addr),
+        .ADDRG(cpu_addr),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[28]),
+        .DIB(p_5_in[29]),
+        .DIC(p_5_in[30]),
+        .DID(p_5_in[31]),
+        .DIE(1'b0),
+        .DIF(1'b0),
+        .DIG(1'b0),
+        .DIH(1'b0),
+        .DOA(cpu_dout0[28]),
+        .DOB(cpu_dout0[29]),
+        .DOC(cpu_dout0[30]),
+        .DOD(cpu_dout0[31]),
+        .DOE(NLW_ram_reg_r1_0_63_28_31_DOE_UNCONNECTED),
+        .DOF(NLW_ram_reg_r1_0_63_28_31_DOF_UNCONNECTED),
+        .DOG(NLW_ram_reg_r1_0_63_28_31_DOG_UNCONNECTED),
+        .DOH(NLW_ram_reg_r1_0_63_28_31_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_24_26_i_1
-       (.I0(cpu_din[24]),
-        .I1(cpu_we[3]),
-        .I2(cpu_dout0[24]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_24_26_i_4_n_0),
-        .O(p_5_in[24]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_24_26_i_2
-       (.I0(cpu_din[25]),
-        .I1(cpu_we[3]),
-        .I2(cpu_dout0[25]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_24_26_i_5_n_0),
-        .O(p_5_in[25]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_24_26_i_3
-       (.I0(cpu_din[26]),
-        .I1(cpu_we[3]),
-        .I2(cpu_dout0[26]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_24_26_i_6_n_0),
-        .O(p_5_in[26]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_24_26_i_4
-       (.I0(S_AXI_WDATA[24]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[24]),
-        .O(ram_reg_r1_0_63_24_26_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_24_26_i_5
-       (.I0(S_AXI_WDATA[25]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[25]),
-        .O(ram_reg_r1_0_63_24_26_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_24_26_i_6
-       (.I0(S_AXI_WDATA[26]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[26]),
-        .O(ram_reg_r1_0_63_24_26_i_6_n_0));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "27" *) 
-  (* ram_slice_end = "29" *) 
-  RAM64M ram_reg_r1_0_63_27_29
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[27]),
-        .DIB(p_5_in[28]),
-        .DIC(p_5_in[29]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[27]),
-        .DOB(cpu_dout0[28]),
-        .DOC(cpu_dout0[29]),
-        .DOD(NLW_ram_reg_r1_0_63_27_29_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_27_29_i_1
-       (.I0(cpu_din[27]),
-        .I1(cpu_we[3]),
-        .I2(cpu_dout0[27]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_27_29_i_4_n_0),
-        .O(p_5_in[27]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_27_29_i_2
+    ram_reg_r1_0_63_28_31_i_1
        (.I0(cpu_din[28]),
         .I1(cpu_we[3]),
         .I2(cpu_dout0[28]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_27_29_i_5_n_0),
+        .I4(ram_reg_r1_0_63_28_31_i_5_n_0),
         .O(p_5_in[28]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_27_29_i_3
+    ram_reg_r1_0_63_28_31_i_2
        (.I0(cpu_din[29]),
         .I1(cpu_we[3]),
         .I2(cpu_dout0[29]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_27_29_i_6_n_0),
+        .I4(ram_reg_r1_0_63_28_31_i_6_n_0),
         .O(p_5_in[29]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_27_29_i_4
-       (.I0(S_AXI_WDATA[27]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[27]),
-        .O(ram_reg_r1_0_63_27_29_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_27_29_i_5
-       (.I0(S_AXI_WDATA[28]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[28]),
-        .O(ram_reg_r1_0_63_27_29_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_27_29_i_6
-       (.I0(S_AXI_WDATA[29]),
-        .I1(S_AXI_WSTRB[3]),
-        .I2(p_3_out[29]),
-        .O(ram_reg_r1_0_63_27_29_i_6_n_0));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "30" *) 
-  (* ram_slice_end = "31" *) 
-  RAM64M ram_reg_r1_0_63_30_31
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[30]),
-        .DIB(p_5_in[31]),
-        .DIC(1'b0),
-        .DID(1'b0),
-        .DOA(cpu_dout0[30]),
-        .DOB(cpu_dout0[31]),
-        .DOC(NLW_ram_reg_r1_0_63_30_31_DOC_UNCONNECTED),
-        .DOD(NLW_ram_reg_r1_0_63_30_31_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_30_31_i_1
+    ram_reg_r1_0_63_28_31_i_3
        (.I0(cpu_din[30]),
         .I1(cpu_we[3]),
         .I2(cpu_dout0[30]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_30_31_i_3_n_0),
+        .I4(ram_reg_r1_0_63_28_31_i_7_n_0),
         .O(p_5_in[30]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_30_31_i_2
+    ram_reg_r1_0_63_28_31_i_4
        (.I0(cpu_din[31]),
         .I1(cpu_we[3]),
         .I2(cpu_dout0[31]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_30_31_i_4_n_0),
+        .I4(ram_reg_r1_0_63_28_31_i_8_n_0),
         .O(p_5_in[31]));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_28_31_i_5
+       (.I0(S_AXI_WDATA[28]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[28]),
+        .O(ram_reg_r1_0_63_28_31_i_5_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_28_31_i_6
+       (.I0(S_AXI_WDATA[29]),
+        .I1(S_AXI_WSTRB[3]),
+        .I2(p_3_out[29]),
+        .O(ram_reg_r1_0_63_28_31_i_6_n_0));
   (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_30_31_i_3
+    ram_reg_r1_0_63_28_31_i_7
        (.I0(S_AXI_WDATA[30]),
         .I1(S_AXI_WSTRB[3]),
         .I2(p_3_out[30]),
-        .O(ram_reg_r1_0_63_30_31_i_3_n_0));
+        .O(ram_reg_r1_0_63_28_31_i_7_n_0));
   (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_30_31_i_4
+    ram_reg_r1_0_63_28_31_i_8
        (.I0(S_AXI_WDATA[31]),
         .I1(S_AXI_WSTRB[3]),
         .I2(p_3_out[31]),
-        .O(ram_reg_r1_0_63_30_31_i_4_n_0));
+        .O(ram_reg_r1_0_63_28_31_i_8_n_0));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "3" *) 
-  (* ram_slice_end = "5" *) 
-  RAM64M ram_reg_r1_0_63_3_5
+  (* ram_slice_begin = "7" *) 
+  (* ram_slice_end = "13" *) 
+  RAM64M8 ram_reg_r1_0_63_7_13
        (.ADDRA(cpu_addr),
         .ADDRB(cpu_addr),
         .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[3]),
-        .DIB(p_5_in[4]),
-        .DIC(p_5_in[5]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[3]),
-        .DOB(cpu_dout0[4]),
-        .DOC(cpu_dout0[5]),
-        .DOD(NLW_ram_reg_r1_0_63_3_5_DOD_UNCONNECTED),
+        .ADDRD(cpu_addr),
+        .ADDRE(cpu_addr),
+        .ADDRF(cpu_addr),
+        .ADDRG(cpu_addr),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[7]),
+        .DIB(p_5_in[8]),
+        .DIC(p_5_in[9]),
+        .DID(p_5_in[10]),
+        .DIE(p_5_in[11]),
+        .DIF(p_5_in[12]),
+        .DIG(p_5_in[13]),
+        .DIH(1'b0),
+        .DOA(cpu_dout0[7]),
+        .DOB(cpu_dout0[8]),
+        .DOC(cpu_dout0[9]),
+        .DOD(cpu_dout0[10]),
+        .DOE(cpu_dout0[11]),
+        .DOF(cpu_dout0[12]),
+        .DOG(cpu_dout0[13]),
+        .DOH(NLW_ram_reg_r1_0_63_7_13_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_3_5_i_1
-       (.I0(cpu_din[3]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[3]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_3_5_i_4_n_0),
-        .O(p_5_in[3]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_3_5_i_2
-       (.I0(cpu_din[4]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[4]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_3_5_i_5_n_0),
-        .O(p_5_in[4]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_3_5_i_3
-       (.I0(cpu_din[5]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[5]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_3_5_i_6_n_0),
-        .O(p_5_in[5]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_3_5_i_4
-       (.I0(S_AXI_WDATA[3]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[3]),
-        .O(ram_reg_r1_0_63_3_5_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_3_5_i_5
-       (.I0(S_AXI_WDATA[4]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[4]),
-        .O(ram_reg_r1_0_63_3_5_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_3_5_i_6
-       (.I0(S_AXI_WDATA[5]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[5]),
-        .O(ram_reg_r1_0_63_3_5_i_6_n_0));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "6" *) 
-  (* ram_slice_end = "8" *) 
-  RAM64M ram_reg_r1_0_63_6_8
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[6]),
-        .DIB(p_5_in[7]),
-        .DIC(p_5_in[8]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[6]),
-        .DOB(cpu_dout0[7]),
-        .DOC(cpu_dout0[8]),
-        .DOD(NLW_ram_reg_r1_0_63_6_8_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_6_8_i_1
-       (.I0(cpu_din[6]),
-        .I1(cpu_we[0]),
-        .I2(cpu_dout0[6]),
-        .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_6_8_i_4_n_0),
-        .O(p_5_in[6]));
-  LUT5 #(
-    .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_6_8_i_2
+    ram_reg_r1_0_63_7_13_i_1
        (.I0(cpu_din[7]),
         .I1(cpu_we[0]),
         .I2(cpu_dout0[7]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_6_8_i_5_n_0),
+        .I4(ram_reg_r1_0_63_7_13_i_8_n_0),
         .O(p_5_in[7]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_10
+       (.I0(S_AXI_WDATA[9]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[9]),
+        .O(ram_reg_r1_0_63_7_13_i_10_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_11
+       (.I0(S_AXI_WDATA[10]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[10]),
+        .O(ram_reg_r1_0_63_7_13_i_11_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_12
+       (.I0(S_AXI_WDATA[11]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[11]),
+        .O(ram_reg_r1_0_63_7_13_i_12_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_13
+       (.I0(S_AXI_WDATA[12]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[12]),
+        .O(ram_reg_r1_0_63_7_13_i_13_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_14
+       (.I0(S_AXI_WDATA[13]),
+        .I1(S_AXI_WSTRB[1]),
+        .I2(p_3_out[13]),
+        .O(ram_reg_r1_0_63_7_13_i_14_n_0));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_6_8_i_3
+    ram_reg_r1_0_63_7_13_i_2
        (.I0(cpu_din[8]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[8]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_6_8_i_6_n_0),
+        .I4(ram_reg_r1_0_63_7_13_i_9_n_0),
         .O(p_5_in[8]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_6_8_i_4
-       (.I0(S_AXI_WDATA[6]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[6]),
-        .O(ram_reg_r1_0_63_6_8_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_6_8_i_5
-       (.I0(S_AXI_WDATA[7]),
-        .I1(S_AXI_WSTRB[0]),
-        .I2(p_3_out[7]),
-        .O(ram_reg_r1_0_63_6_8_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_6_8_i_6
-       (.I0(S_AXI_WDATA[8]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[8]),
-        .O(ram_reg_r1_0_63_6_8_i_6_n_0));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "9" *) 
-  (* ram_slice_end = "11" *) 
-  RAM64M ram_reg_r1_0_63_9_11
-       (.ADDRA(cpu_addr),
-        .ADDRB(cpu_addr),
-        .ADDRC(cpu_addr),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[9]),
-        .DIB(p_5_in[10]),
-        .DIC(p_5_in[11]),
-        .DID(1'b0),
-        .DOA(cpu_dout0[9]),
-        .DOB(cpu_dout0[10]),
-        .DOC(cpu_dout0[11]),
-        .DOD(NLW_ram_reg_r1_0_63_9_11_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_9_11_i_1
+    ram_reg_r1_0_63_7_13_i_3
        (.I0(cpu_din[9]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[9]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_9_11_i_4_n_0),
+        .I4(ram_reg_r1_0_63_7_13_i_10_n_0),
         .O(p_5_in[9]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_9_11_i_2
+    ram_reg_r1_0_63_7_13_i_4
        (.I0(cpu_din[10]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[10]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_9_11_i_5_n_0),
+        .I4(ram_reg_r1_0_63_7_13_i_11_n_0),
         .O(p_5_in[10]));
   LUT5 #(
     .INIT(32'hFFB800B8)) 
-    ram_reg_r1_0_63_9_11_i_3
+    ram_reg_r1_0_63_7_13_i_5
        (.I0(cpu_din[11]),
         .I1(cpu_we[1]),
         .I2(cpu_dout0[11]),
         .I3(p_0_in_0),
-        .I4(ram_reg_r1_0_63_9_11_i_6_n_0),
+        .I4(ram_reg_r1_0_63_7_13_i_12_n_0),
         .O(p_5_in[11]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_7_13_i_6
+       (.I0(cpu_din[12]),
+        .I1(cpu_we[1]),
+        .I2(cpu_dout0[12]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_7_13_i_13_n_0),
+        .O(p_5_in[12]));
+  LUT5 #(
+    .INIT(32'hFFB800B8)) 
+    ram_reg_r1_0_63_7_13_i_7
+       (.I0(cpu_din[13]),
+        .I1(cpu_we[1]),
+        .I2(cpu_dout0[13]),
+        .I3(p_0_in_0),
+        .I4(ram_reg_r1_0_63_7_13_i_14_n_0),
+        .O(p_5_in[13]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    ram_reg_r1_0_63_7_13_i_8
+       (.I0(S_AXI_WDATA[7]),
+        .I1(S_AXI_WSTRB[0]),
+        .I2(p_3_out[7]),
+        .O(ram_reg_r1_0_63_7_13_i_8_n_0));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    ram_reg_r1_0_63_9_11_i_4
-       (.I0(S_AXI_WDATA[9]),
+    ram_reg_r1_0_63_7_13_i_9
+       (.I0(S_AXI_WDATA[8]),
         .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[9]),
-        .O(ram_reg_r1_0_63_9_11_i_4_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_9_11_i_5
-       (.I0(S_AXI_WDATA[10]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[10]),
-        .O(ram_reg_r1_0_63_9_11_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    ram_reg_r1_0_63_9_11_i_6
-       (.I0(S_AXI_WDATA[11]),
-        .I1(S_AXI_WSTRB[1]),
-        .I2(p_3_out[11]),
-        .O(ram_reg_r1_0_63_9_11_i_6_n_0));
+        .I2(p_3_out[8]),
+        .O(ram_reg_r1_0_63_7_13_i_9_n_0));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "0" *) 
-  (* ram_slice_end = "2" *) 
-  RAM64M ram_reg_r2_0_63_0_2
+  (* ram_slice_end = "6" *) 
+  RAM64M8 ram_reg_r2_0_63_0_6
        (.ADDRA(S_AXI_AWADDR),
         .ADDRB(S_AXI_AWADDR),
         .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
+        .ADDRD(S_AXI_AWADDR),
+        .ADDRE(S_AXI_AWADDR),
+        .ADDRF(S_AXI_AWADDR),
+        .ADDRG(S_AXI_AWADDR),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[0]),
         .DIB(p_5_in[1]),
         .DIC(p_5_in[2]),
-        .DID(1'b0),
+        .DID(p_5_in[3]),
+        .DIE(p_5_in[4]),
+        .DIF(p_5_in[5]),
+        .DIG(p_5_in[6]),
+        .DIH(1'b0),
         .DOA(p_3_out[0]),
         .DOB(p_3_out[1]),
         .DOC(p_3_out[2]),
-        .DOD(NLW_ram_reg_r2_0_63_0_2_DOD_UNCONNECTED),
+        .DOD(p_3_out[3]),
+        .DOE(p_3_out[4]),
+        .DOF(p_3_out[5]),
+        .DOG(p_3_out[6]),
+        .DOH(NLW_ram_reg_r2_0_63_0_6_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "12" *) 
-  (* ram_slice_end = "14" *) 
-  RAM64M ram_reg_r2_0_63_12_14
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[12]),
-        .DIB(p_5_in[13]),
-        .DIC(p_5_in[14]),
-        .DID(1'b0),
-        .DOA(p_3_out[12]),
-        .DOB(p_3_out[13]),
-        .DOC(p_3_out[14]),
-        .DOD(NLW_ram_reg_r2_0_63_12_14_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "15" *) 
-  (* ram_slice_end = "17" *) 
-  RAM64M ram_reg_r2_0_63_15_17
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[15]),
-        .DIB(p_5_in[16]),
-        .DIC(p_5_in[17]),
-        .DID(1'b0),
-        .DOA(p_3_out[15]),
-        .DOB(p_3_out[16]),
-        .DOC(p_3_out[17]),
-        .DOD(NLW_ram_reg_r2_0_63_15_17_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "18" *) 
+  (* ram_slice_begin = "14" *) 
   (* ram_slice_end = "20" *) 
-  RAM64M ram_reg_r2_0_63_18_20
+  RAM64M8 ram_reg_r2_0_63_14_20
        (.ADDRA(S_AXI_AWADDR),
         .ADDRB(S_AXI_AWADDR),
         .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[18]),
-        .DIB(p_5_in[19]),
-        .DIC(p_5_in[20]),
-        .DID(1'b0),
-        .DOA(p_3_out[18]),
-        .DOB(p_3_out[19]),
-        .DOC(p_3_out[20]),
-        .DOD(NLW_ram_reg_r2_0_63_18_20_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_AWADDR),
+        .ADDRE(S_AXI_AWADDR),
+        .ADDRF(S_AXI_AWADDR),
+        .ADDRG(S_AXI_AWADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[14]),
+        .DIB(p_5_in[15]),
+        .DIC(p_5_in[16]),
+        .DID(p_5_in[17]),
+        .DIE(p_5_in[18]),
+        .DIF(p_5_in[19]),
+        .DIG(p_5_in[20]),
+        .DIH(1'b0),
+        .DOA(p_3_out[14]),
+        .DOB(p_3_out[15]),
+        .DOC(p_3_out[16]),
+        .DOD(p_3_out[17]),
+        .DOE(p_3_out[18]),
+        .DOF(p_3_out[19]),
+        .DOG(p_3_out[20]),
+        .DOH(NLW_ram_reg_r2_0_63_14_20_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "21" *) 
-  (* ram_slice_end = "23" *) 
-  RAM64M ram_reg_r2_0_63_21_23
+  (* ram_slice_end = "27" *) 
+  RAM64M8 ram_reg_r2_0_63_21_27
        (.ADDRA(S_AXI_AWADDR),
         .ADDRB(S_AXI_AWADDR),
         .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
+        .ADDRD(S_AXI_AWADDR),
+        .ADDRE(S_AXI_AWADDR),
+        .ADDRF(S_AXI_AWADDR),
+        .ADDRG(S_AXI_AWADDR),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[21]),
         .DIB(p_5_in[22]),
         .DIC(p_5_in[23]),
-        .DID(1'b0),
+        .DID(p_5_in[24]),
+        .DIE(p_5_in[25]),
+        .DIF(p_5_in[26]),
+        .DIG(p_5_in[27]),
+        .DIH(1'b0),
         .DOA(p_3_out[21]),
         .DOB(p_3_out[22]),
         .DOC(p_3_out[23]),
-        .DOD(NLW_ram_reg_r2_0_63_21_23_DOD_UNCONNECTED),
+        .DOD(p_3_out[24]),
+        .DOE(p_3_out[25]),
+        .DOF(p_3_out[26]),
+        .DOG(p_3_out[27]),
+        .DOH(NLW_ram_reg_r2_0_63_21_27_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "24" *) 
-  (* ram_slice_end = "26" *) 
-  RAM64M ram_reg_r2_0_63_24_26
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[24]),
-        .DIB(p_5_in[25]),
-        .DIC(p_5_in[26]),
-        .DID(1'b0),
-        .DOA(p_3_out[24]),
-        .DOB(p_3_out[25]),
-        .DOC(p_3_out[26]),
-        .DOD(NLW_ram_reg_r2_0_63_24_26_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "27" *) 
-  (* ram_slice_end = "29" *) 
-  RAM64M ram_reg_r2_0_63_27_29
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[27]),
-        .DIB(p_5_in[28]),
-        .DIC(p_5_in[29]),
-        .DID(1'b0),
-        .DOA(p_3_out[27]),
-        .DOB(p_3_out[28]),
-        .DOC(p_3_out[29]),
-        .DOD(NLW_ram_reg_r2_0_63_27_29_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "30" *) 
+  (* ram_slice_begin = "28" *) 
   (* ram_slice_end = "31" *) 
-  RAM64M ram_reg_r2_0_63_30_31
+  RAM64M8 ram_reg_r2_0_63_28_31
        (.ADDRA(S_AXI_AWADDR),
         .ADDRB(S_AXI_AWADDR),
         .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[30]),
-        .DIB(p_5_in[31]),
-        .DIC(1'b0),
-        .DID(1'b0),
-        .DOA(p_3_out[30]),
-        .DOB(p_3_out[31]),
-        .DOC(NLW_ram_reg_r2_0_63_30_31_DOC_UNCONNECTED),
-        .DOD(NLW_ram_reg_r2_0_63_30_31_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_AWADDR),
+        .ADDRE(S_AXI_AWADDR),
+        .ADDRF(S_AXI_AWADDR),
+        .ADDRG(S_AXI_AWADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[28]),
+        .DIB(p_5_in[29]),
+        .DIC(p_5_in[30]),
+        .DID(p_5_in[31]),
+        .DIE(1'b0),
+        .DIF(1'b0),
+        .DIG(1'b0),
+        .DIH(1'b0),
+        .DOA(p_3_out[28]),
+        .DOB(p_3_out[29]),
+        .DOC(p_3_out[30]),
+        .DOD(p_3_out[31]),
+        .DOE(NLW_ram_reg_r2_0_63_28_31_DOE_UNCONNECTED),
+        .DOF(NLW_ram_reg_r2_0_63_28_31_DOF_UNCONNECTED),
+        .DOG(NLW_ram_reg_r2_0_63_28_31_DOG_UNCONNECTED),
+        .DOH(NLW_ram_reg_r2_0_63_28_31_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "3" *) 
-  (* ram_slice_end = "5" *) 
-  RAM64M ram_reg_r2_0_63_3_5
+  (* ram_slice_begin = "7" *) 
+  (* ram_slice_end = "13" *) 
+  RAM64M8 ram_reg_r2_0_63_7_13
        (.ADDRA(S_AXI_AWADDR),
         .ADDRB(S_AXI_AWADDR),
         .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[3]),
-        .DIB(p_5_in[4]),
-        .DIC(p_5_in[5]),
-        .DID(1'b0),
-        .DOA(p_3_out[3]),
-        .DOB(p_3_out[4]),
-        .DOC(p_3_out[5]),
-        .DOD(NLW_ram_reg_r2_0_63_3_5_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_AWADDR),
+        .ADDRE(S_AXI_AWADDR),
+        .ADDRF(S_AXI_AWADDR),
+        .ADDRG(S_AXI_AWADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[7]),
+        .DIB(p_5_in[8]),
+        .DIC(p_5_in[9]),
+        .DID(p_5_in[10]),
+        .DIE(p_5_in[11]),
+        .DIF(p_5_in[12]),
+        .DIG(p_5_in[13]),
+        .DIH(1'b0),
+        .DOA(p_3_out[7]),
+        .DOB(p_3_out[8]),
+        .DOC(p_3_out[9]),
+        .DOD(p_3_out[10]),
+        .DOE(p_3_out[11]),
+        .DOF(p_3_out[12]),
+        .DOG(p_3_out[13]),
+        .DOH(NLW_ram_reg_r2_0_63_7_13_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "6" *) 
-  (* ram_slice_end = "8" *) 
-  RAM64M ram_reg_r2_0_63_6_8
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[6]),
-        .DIB(p_5_in[7]),
-        .DIC(p_5_in[8]),
-        .DID(1'b0),
-        .DOA(p_3_out[6]),
-        .DOB(p_3_out[7]),
-        .DOC(p_3_out[8]),
-        .DOD(NLW_ram_reg_r2_0_63_6_8_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "9" *) 
-  (* ram_slice_end = "11" *) 
-  RAM64M ram_reg_r2_0_63_9_11
-       (.ADDRA(S_AXI_AWADDR),
-        .ADDRB(S_AXI_AWADDR),
-        .ADDRC(S_AXI_AWADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[9]),
-        .DIB(p_5_in[10]),
-        .DIC(p_5_in[11]),
-        .DID(1'b0),
-        .DOA(p_3_out[9]),
-        .DOB(p_3_out[10]),
-        .DOC(p_3_out[11]),
-        .DOD(NLW_ram_reg_r2_0_63_9_11_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "0" *) 
-  (* ram_slice_end = "2" *) 
-  RAM64M ram_reg_r3_0_63_0_2
+  (* ram_slice_end = "6" *) 
+  RAM64M8 ram_reg_r3_0_63_0_6
        (.ADDRA(S_AXI_ARADDR),
         .ADDRB(S_AXI_ARADDR),
         .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
+        .ADDRD(S_AXI_ARADDR),
+        .ADDRE(S_AXI_ARADDR),
+        .ADDRF(S_AXI_ARADDR),
+        .ADDRG(S_AXI_ARADDR),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[0]),
         .DIB(p_5_in[1]),
         .DIC(p_5_in[2]),
-        .DID(1'b0),
+        .DID(p_5_in[3]),
+        .DIE(p_5_in[4]),
+        .DIF(p_5_in[5]),
+        .DIG(p_5_in[6]),
+        .DIH(1'b0),
         .DOA(axi_rdata0[0]),
         .DOB(axi_rdata0[1]),
         .DOC(axi_rdata0[2]),
-        .DOD(NLW_ram_reg_r3_0_63_0_2_DOD_UNCONNECTED),
+        .DOD(axi_rdata0[3]),
+        .DOE(axi_rdata0[4]),
+        .DOF(axi_rdata0[5]),
+        .DOG(axi_rdata0[6]),
+        .DOH(NLW_ram_reg_r3_0_63_0_6_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "12" *) 
-  (* ram_slice_end = "14" *) 
-  RAM64M ram_reg_r3_0_63_12_14
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[12]),
-        .DIB(p_5_in[13]),
-        .DIC(p_5_in[14]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[12]),
-        .DOB(axi_rdata0[13]),
-        .DOC(axi_rdata0[14]),
-        .DOD(NLW_ram_reg_r3_0_63_12_14_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "15" *) 
-  (* ram_slice_end = "17" *) 
-  RAM64M ram_reg_r3_0_63_15_17
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[15]),
-        .DIB(p_5_in[16]),
-        .DIC(p_5_in[17]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[15]),
-        .DOB(axi_rdata0[16]),
-        .DOC(axi_rdata0[17]),
-        .DOD(NLW_ram_reg_r3_0_63_15_17_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "18" *) 
+  (* ram_slice_begin = "14" *) 
   (* ram_slice_end = "20" *) 
-  RAM64M ram_reg_r3_0_63_18_20
+  RAM64M8 ram_reg_r3_0_63_14_20
        (.ADDRA(S_AXI_ARADDR),
         .ADDRB(S_AXI_ARADDR),
         .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[18]),
-        .DIB(p_5_in[19]),
-        .DIC(p_5_in[20]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[18]),
-        .DOB(axi_rdata0[19]),
-        .DOC(axi_rdata0[20]),
-        .DOD(NLW_ram_reg_r3_0_63_18_20_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_ARADDR),
+        .ADDRE(S_AXI_ARADDR),
+        .ADDRF(S_AXI_ARADDR),
+        .ADDRG(S_AXI_ARADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[14]),
+        .DIB(p_5_in[15]),
+        .DIC(p_5_in[16]),
+        .DID(p_5_in[17]),
+        .DIE(p_5_in[18]),
+        .DIF(p_5_in[19]),
+        .DIG(p_5_in[20]),
+        .DIH(1'b0),
+        .DOA(axi_rdata0[14]),
+        .DOB(axi_rdata0[15]),
+        .DOC(axi_rdata0[16]),
+        .DOD(axi_rdata0[17]),
+        .DOE(axi_rdata0[18]),
+        .DOF(axi_rdata0[19]),
+        .DOG(axi_rdata0[20]),
+        .DOH(NLW_ram_reg_r3_0_63_14_20_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
   (* ram_slice_begin = "21" *) 
-  (* ram_slice_end = "23" *) 
-  RAM64M ram_reg_r3_0_63_21_23
+  (* ram_slice_end = "27" *) 
+  RAM64M8 ram_reg_r3_0_63_21_27
        (.ADDRA(S_AXI_ARADDR),
         .ADDRB(S_AXI_ARADDR),
         .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
+        .ADDRD(S_AXI_ARADDR),
+        .ADDRE(S_AXI_ARADDR),
+        .ADDRF(S_AXI_ARADDR),
+        .ADDRG(S_AXI_ARADDR),
+        .ADDRH(p_4_in),
         .DIA(p_5_in[21]),
         .DIB(p_5_in[22]),
         .DIC(p_5_in[23]),
-        .DID(1'b0),
+        .DID(p_5_in[24]),
+        .DIE(p_5_in[25]),
+        .DIF(p_5_in[26]),
+        .DIG(p_5_in[27]),
+        .DIH(1'b0),
         .DOA(axi_rdata0[21]),
         .DOB(axi_rdata0[22]),
         .DOC(axi_rdata0[23]),
-        .DOD(NLW_ram_reg_r3_0_63_21_23_DOD_UNCONNECTED),
+        .DOD(axi_rdata0[24]),
+        .DOE(axi_rdata0[25]),
+        .DOF(axi_rdata0[26]),
+        .DOG(axi_rdata0[27]),
+        .DOH(NLW_ram_reg_r3_0_63_21_27_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "24" *) 
-  (* ram_slice_end = "26" *) 
-  RAM64M ram_reg_r3_0_63_24_26
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[24]),
-        .DIB(p_5_in[25]),
-        .DIC(p_5_in[26]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[24]),
-        .DOB(axi_rdata0[25]),
-        .DOC(axi_rdata0[26]),
-        .DOD(NLW_ram_reg_r3_0_63_24_26_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "27" *) 
-  (* ram_slice_end = "29" *) 
-  RAM64M ram_reg_r3_0_63_27_29
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[27]),
-        .DIB(p_5_in[28]),
-        .DIC(p_5_in[29]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[27]),
-        .DOB(axi_rdata0[28]),
-        .DOC(axi_rdata0[29]),
-        .DOD(NLW_ram_reg_r3_0_63_27_29_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "30" *) 
+  (* ram_slice_begin = "28" *) 
   (* ram_slice_end = "31" *) 
-  RAM64M ram_reg_r3_0_63_30_31
+  RAM64M8 ram_reg_r3_0_63_28_31
        (.ADDRA(S_AXI_ARADDR),
         .ADDRB(S_AXI_ARADDR),
         .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[30]),
-        .DIB(p_5_in[31]),
-        .DIC(1'b0),
-        .DID(1'b0),
-        .DOA(axi_rdata0[30]),
-        .DOB(axi_rdata0[31]),
-        .DOC(NLW_ram_reg_r3_0_63_30_31_DOC_UNCONNECTED),
-        .DOD(NLW_ram_reg_r3_0_63_30_31_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_ARADDR),
+        .ADDRE(S_AXI_ARADDR),
+        .ADDRF(S_AXI_ARADDR),
+        .ADDRG(S_AXI_ARADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[28]),
+        .DIB(p_5_in[29]),
+        .DIC(p_5_in[30]),
+        .DID(p_5_in[31]),
+        .DIE(1'b0),
+        .DIF(1'b0),
+        .DIG(1'b0),
+        .DIH(1'b0),
+        .DOA(axi_rdata0[28]),
+        .DOB(axi_rdata0[29]),
+        .DOC(axi_rdata0[30]),
+        .DOD(axi_rdata0[31]),
+        .DOE(NLW_ram_reg_r3_0_63_28_31_DOE_UNCONNECTED),
+        .DOF(NLW_ram_reg_r3_0_63_28_31_DOF_UNCONNECTED),
+        .DOG(NLW_ram_reg_r3_0_63_28_31_DOG_UNCONNECTED),
+        .DOH(NLW_ram_reg_r3_0_63_28_31_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
   (* METHODOLOGY_DRC_VIOS = "" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
+  (* RTL_RAM_NAME = "soc_riscv_v2_axi_lutram_wrapper_0_0/inst/ram_reg" *) 
   (* RTL_RAM_STYLE = "distributed" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "63" *) 
   (* ram_offset = "0" *) 
-  (* ram_slice_begin = "3" *) 
-  (* ram_slice_end = "5" *) 
-  RAM64M ram_reg_r3_0_63_3_5
+  (* ram_slice_begin = "7" *) 
+  (* ram_slice_end = "13" *) 
+  RAM64M8 ram_reg_r3_0_63_7_13
        (.ADDRA(S_AXI_ARADDR),
         .ADDRB(S_AXI_ARADDR),
         .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[3]),
-        .DIB(p_5_in[4]),
-        .DIC(p_5_in[5]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[3]),
-        .DOB(axi_rdata0[4]),
-        .DOC(axi_rdata0[5]),
-        .DOD(NLW_ram_reg_r3_0_63_3_5_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "6" *) 
-  (* ram_slice_end = "8" *) 
-  RAM64M ram_reg_r3_0_63_6_8
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[6]),
-        .DIB(p_5_in[7]),
-        .DIC(p_5_in[8]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[6]),
-        .DOB(axi_rdata0[7]),
-        .DOC(axi_rdata0[8]),
-        .DOD(NLW_ram_reg_r3_0_63_6_8_DOD_UNCONNECTED),
-        .WCLK(S_AXI_ACLK),
-        .WE(p_1_in));
-  (* METHODOLOGY_DRC_VIOS = "" *) 
-  (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "soc_riscv_v1_axi_lutram_wrapper_1_0/inst/ram_reg" *) 
-  (* RTL_RAM_STYLE = "distributed" *) 
-  (* RTL_RAM_TYPE = "RAM_SDP" *) 
-  (* ram_addr_begin = "0" *) 
-  (* ram_addr_end = "63" *) 
-  (* ram_offset = "0" *) 
-  (* ram_slice_begin = "9" *) 
-  (* ram_slice_end = "11" *) 
-  RAM64M ram_reg_r3_0_63_9_11
-       (.ADDRA(S_AXI_ARADDR),
-        .ADDRB(S_AXI_ARADDR),
-        .ADDRC(S_AXI_ARADDR),
-        .ADDRD(p_4_in),
-        .DIA(p_5_in[9]),
-        .DIB(p_5_in[10]),
-        .DIC(p_5_in[11]),
-        .DID(1'b0),
-        .DOA(axi_rdata0[9]),
-        .DOB(axi_rdata0[10]),
-        .DOC(axi_rdata0[11]),
-        .DOD(NLW_ram_reg_r3_0_63_9_11_DOD_UNCONNECTED),
+        .ADDRD(S_AXI_ARADDR),
+        .ADDRE(S_AXI_ARADDR),
+        .ADDRF(S_AXI_ARADDR),
+        .ADDRG(S_AXI_ARADDR),
+        .ADDRH(p_4_in),
+        .DIA(p_5_in[7]),
+        .DIB(p_5_in[8]),
+        .DIC(p_5_in[9]),
+        .DID(p_5_in[10]),
+        .DIE(p_5_in[11]),
+        .DIF(p_5_in[12]),
+        .DIG(p_5_in[13]),
+        .DIH(1'b0),
+        .DOA(axi_rdata0[7]),
+        .DOB(axi_rdata0[8]),
+        .DOC(axi_rdata0[9]),
+        .DOD(axi_rdata0[10]),
+        .DOE(axi_rdata0[11]),
+        .DOF(axi_rdata0[12]),
+        .DOG(axi_rdata0[13]),
+        .DOH(NLW_ram_reg_r3_0_63_7_13_DOH_UNCONNECTED),
         .WCLK(S_AXI_ACLK),
         .WE(p_1_in));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "soc_riscv_v1_axi_lutram_wrapper_1_0,axi_lutram_wrapper,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
+(* CHECK_LICENSE_TYPE = "soc_riscv_v2_axi_lutram_wrapper_0_0,axi_lutram_wrapper,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
 (* X_CORE_INFO = "axi_lutram_wrapper,Vivado 2025.1" *) 
 (* NotValidForBitStream *)
 module soc_riscv_v2_axi_lutram_wrapper_1_0
@@ -2138,9 +1856,9 @@ module soc_riscv_v2_axi_lutram_wrapper_1_0
   input cpu_en;
   input [3:0]cpu_we;
   input [31:0]cpu_din;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input S_AXI_ACLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *) input S_AXI_ACLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input S_AXI_ARESETN;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN soc_riscv_v1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [31:0]S_AXI_AWADDR;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 99999001, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [31:0]S_AXI_AWADDR;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input S_AXI_AWVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output S_AXI_AWREADY;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]S_AXI_WDATA;

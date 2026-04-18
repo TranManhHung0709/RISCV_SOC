@@ -2,13 +2,13 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Sat Mar 14 23:02:48 2026
+// Date        : Thu Mar 26 23:25:14 2026
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/Vivado_projects/RISCV_SOC/RISCV_SOC.gen/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_addr_decoder_0_0/soc_riscv_v2_addr_decoder_0_0_stub.v
 // Design      : soc_riscv_v2_addr_decoder_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7z020clg484-1
+// Device      : xck26-sfvc784-2LV-c
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

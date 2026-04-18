@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Mar 26 23:25:20 2026
+# Process ID         : 492
+# Current directory  : E:/Vivado_projects/RISCV_SOC/RISCV_SOC.runs/soc_riscv_v2_axi_lutram_wrapper_1_0_synth_1
+# Command line       : vivado.exe -log soc_riscv_v2_axi_lutram_wrapper_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_riscv_v2_axi_lutram_wrapper_1_0.tcl
+# Log file           : E:/Vivado_projects/RISCV_SOC/RISCV_SOC.runs/soc_riscv_v2_axi_lutram_wrapper_1_0_synth_1/soc_riscv_v2_axi_lutram_wrapper_1_0.vds
+# Journal file       : E:/Vivado_projects/RISCV_SOC/RISCV_SOC.runs/soc_riscv_v2_axi_lutram_wrapper_1_0_synth_1\vivado.jou
+# Running On         : MSI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency      : 2096 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16498 MB
+# Swap memory        : 22301 MB
+# Total Virtual      : 38799 MB
+# Available Virtual  : 10615 MB
+#-----------------------------------------------------------
+source soc_riscv_v2_axi_lutram_wrapper_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 604.141 ; gain = 211.832
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado_projects/RISCV_SOC/my_ip/riscv_ram_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado_projects/RISCV_SOC/my_ip/riscv_cpu_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP soc_riscv_v2_axi_lutram_wrapper_1_0, cache-ID = 2bb7b15d71e2677b.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 26 23:25:38 2026...

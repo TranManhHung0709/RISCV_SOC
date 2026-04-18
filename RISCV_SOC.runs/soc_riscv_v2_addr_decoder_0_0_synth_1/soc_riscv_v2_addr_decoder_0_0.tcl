@@ -56,14 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "soc_riscv_v2_addr_decoder_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 set_param bd.open.in_stealth_mode 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath e:/Vivado_projects/RISCV_SOC/RISCV_SOC.gen/sources_1/bd/mref
-create_project -in_memory -part xc7z020clg484-1
+create_project -in_memory -part xck26-sfvc784-2LV-c
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -74,8 +73,7 @@ set_property parent.project_path E:/Vivado_projects/RISCV_SOC/RISCV_SOC.xpr [cur
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/aduick3/AppData/Roaming/Xilinx/Vivado/2025.1/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part avnet.com:zedboard:part0:1.4 [current_project]
+set_property board_part xilinx.com:kr260_som:part0:1.1 [current_project]
 set_property ip_repo_paths {
   e:/Vivado_projects/RISCV_SOC/my_ip/riscv_ram_ip
   e:/Vivado_projects/RISCV_SOC/my_ip/riscv_cpu_ip
@@ -86,7 +84,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib E:/Vivado_projects/RISCV_SOC/RISCV_SOC.srcs/sources_1/imports/new/addr_decoder.v
-read_ip -quiet e:/Vivado_projects/RISCV_SOC/RISCV_SOC.srcs/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_addr_decoder_0_0/soc_riscv_v2_addr_decoder_0_0.xci
+read_ip -quiet E:/Vivado_projects/RISCV_SOC/RISCV_SOC.srcs/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_addr_decoder_0_0/soc_riscv_v2_addr_decoder_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,7 +99,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top soc_riscv_v2_addr_decoder_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+synth_design -top soc_riscv_v2_addr_decoder_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

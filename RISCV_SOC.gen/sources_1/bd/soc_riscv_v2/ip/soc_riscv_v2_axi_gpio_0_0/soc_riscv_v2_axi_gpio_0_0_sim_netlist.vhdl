@@ -2,14 +2,14 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Sat Mar 14 22:09:44 2026
+-- Date        : Thu Mar 26 23:25:20 2026
 -- Host        : MSI running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top soc_riscv_v2_axi_gpio_0_0 -prefix
---               soc_riscv_v2_axi_gpio_0_0_ soc_riscv_v1_axi_gpio_0_0_sim_netlist.vhdl
--- Design      : soc_riscv_v1_axi_gpio_0_0
+-- Command     : write_vhdl -force -mode funcsim
+--               e:/Vivado_projects/RISCV_SOC/RISCV_SOC.gen/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_axi_gpio_0_0/soc_riscv_v2_axi_gpio_0_0_sim_netlist.vhdl
+-- Design      : soc_riscv_v2_axi_gpio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z020clg484-1
+-- Device      : xck26-sfvc784-2LV-c
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -20,6 +20,8 @@ entity soc_riscv_v2_axi_gpio_0_0_pselect_f is
     ce_expnd_i_3 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_pselect_f : entity is "pselect_f";
 end soc_riscv_v2_axi_gpio_0_0_pselect_f;
 
 architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_pselect_f is
@@ -74,6 +76,8 @@ entity soc_riscv_v2_axi_gpio_0_0_xpm_cdc_array_single is
   attribute DEST_SYNC_FF of soc_riscv_v2_axi_gpio_0_0_xpm_cdc_array_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of soc_riscv_v2_axi_gpio_0_0_xpm_cdc_array_single : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_xpm_cdc_array_single : entity is "xpm_cdc_array_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of soc_riscv_v2_axi_gpio_0_0_xpm_cdc_array_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -182,6 +186,8 @@ entity soc_riscv_v2_axi_gpio_0_0_GPIO_Core is
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_GPIO_Core : entity is "GPIO_Core";
 end soc_riscv_v2_axi_gpio_0_0_GPIO_Core;
 
 architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_GPIO_Core is
@@ -351,6 +357,8 @@ entity soc_riscv_v2_axi_gpio_0_0_address_decoder is
     ip2bus_wrack_i_D1 : in STD_LOGIC;
     s_axi_awready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_address_decoder : entity is "address_decoder";
 end soc_riscv_v2_axi_gpio_0_0_address_decoder;
 
 architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_address_decoder is
@@ -571,6 +579,8 @@ entity soc_riscv_v2_axi_gpio_0_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_slave_attachment : entity is "slave_attachment";
 end soc_riscv_v2_axi_gpio_0_0_slave_attachment;
 
 architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_slave_attachment is
@@ -588,10 +598,10 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_slave_attachment is
   signal clear : STD_LOGIC;
   signal \^ip2bus_rdack_i_d1_reg\ : STD_LOGIC;
   signal \^ip2bus_wrack_i_d1_reg\ : STD_LOGIC;
+  signal is_read : STD_LOGIC;
   signal is_read_i_1_n_0 : STD_LOGIC;
   signal is_read_reg_n_0 : STD_LOGIC;
-  signal is_write_i_1_n_0 : STD_LOGIC;
-  signal is_write_i_2_n_0 : STD_LOGIC;
+  signal is_write : STD_LOGIC;
   signal is_write_reg_n_0 : STD_LOGIC;
   signal p_0_in : STD_LOGIC;
   signal p_1_in : STD_LOGIC_VECTOR ( 8 downto 2 );
@@ -600,9 +610,6 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_slave_attachment is
   signal s_axi_bresp_i : STD_LOGIC;
   signal s_axi_bvalid_i_i_1_n_0 : STD_LOGIC;
   signal \^s_axi_bvalid_i_reg_0\ : STD_LOGIC;
-  signal \^s_axi_rdata\ : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \s_axi_rdata_i[0]_i_1_n_0\ : STD_LOGIC;
-  signal \s_axi_rdata_i[31]_i_1_n_0\ : STD_LOGIC;
   signal s_axi_rresp_i : STD_LOGIC;
   signal s_axi_rvalid_i_i_1_n_0 : STD_LOGIC;
   signal \^s_axi_rvalid_i_reg_0\ : STD_LOGIC;
@@ -622,12 +629,12 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_slave_attachment is
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[1]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \bus2ip_addr_i[3]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \bus2ip_addr_i[8]_i_2\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[0]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of is_read_i_2 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of is_write_i_1 : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of start2_i_1 : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \state[1]_i_2\ : label is "soft_lutpair1";
 begin
@@ -636,7 +643,6 @@ begin
   ip2bus_rdack_i_D1_reg <= \^ip2bus_rdack_i_d1_reg\;
   ip2bus_wrack_i_D1_reg <= \^ip2bus_wrack_i_d1_reg\;
   s_axi_bvalid_i_reg_0 <= \^s_axi_bvalid_i_reg_0\;
-  s_axi_rdata(1 downto 0) <= \^s_axi_rdata\(1 downto 0);
   s_axi_rvalid_i_reg_0 <= \^s_axi_rvalid_i_reg_0\;
   s_axi_wdata_0_sp_1 <= s_axi_wdata_0_sn_1;
 \FSM_onehot_state[0]_i_1\: unisim.vcomponents.LUT6
@@ -923,40 +929,7 @@ bus2ip_rnw_i_reg: unisim.vcomponents.FDRE
       Q => \^bus2ip_rnw\,
       R => \^ss\(0)
     );
-is_read_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"8BBB8888"
-    )
-        port map (
-      I0 => s_axi_arvalid,
-      I1 => \FSM_onehot_state_reg_n_0_[0]\,
-      I2 => \state1__2\,
-      I3 => \FSM_onehot_state_reg_n_0_[3]\,
-      I4 => is_read_reg_n_0,
-      O => is_read_i_1_n_0
-    );
-is_read_reg: unisim.vcomponents.FDRE
-     port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => is_read_i_1_n_0,
-      Q => is_read_reg_n_0,
-      R => \^ss\(0)
-    );
-is_write_i_1: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"2000FFFF20000000"
-    )
-        port map (
-      I0 => \FSM_onehot_state_reg_n_0_[0]\,
-      I1 => s_axi_arvalid,
-      I2 => s_axi_awvalid,
-      I3 => s_axi_wvalid,
-      I4 => is_write_i_2_n_0,
-      I5 => is_write_reg_n_0,
-      O => is_write_i_1_n_0
-    );
-is_write_i_2: unisim.vcomponents.LUT6
+is_read_i_1: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFEAEAEAAAAAAAAA"
     )
@@ -967,13 +940,41 @@ is_write_i_2: unisim.vcomponents.LUT6
       I3 => s_axi_rready,
       I4 => \^s_axi_rvalid_i_reg_0\,
       I5 => \FSM_onehot_state_reg_n_0_[3]\,
-      O => is_write_i_2_n_0
+      O => is_read_i_1_n_0
+    );
+is_read_i_2: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => \FSM_onehot_state_reg_n_0_[0]\,
+      I1 => s_axi_arvalid,
+      O => is_read
+    );
+is_read_reg: unisim.vcomponents.FDRE
+     port map (
+      C => s_axi_aclk,
+      CE => is_read_i_1_n_0,
+      D => is_read,
+      Q => is_read_reg_n_0,
+      R => \^ss\(0)
+    );
+is_write_i_1: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => \FSM_onehot_state_reg_n_0_[0]\,
+      I1 => s_axi_arvalid,
+      I2 => s_axi_awvalid,
+      I3 => s_axi_wvalid,
+      O => is_write
     );
 is_write_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_aclk,
-      CE => '1',
-      D => is_write_i_1_n_0,
+      CE => is_read_i_1_n_0,
+      D => is_write,
       Q => is_write_reg_n_0,
       R => \^ss\(0)
     );
@@ -1016,35 +1017,15 @@ s_axi_bvalid_i_reg: unisim.vcomponents.FDRE
       Q => \^s_axi_bvalid_i_reg_0\,
       R => \^ss\(0)
     );
-\s_axi_rdata_i[0]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => Q(0),
-      I1 => s_axi_rresp_i,
-      I2 => \^s_axi_rdata\(0),
-      O => \s_axi_rdata_i[0]_i_1_n_0\
-    );
-\s_axi_rdata_i[31]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => Q(1),
-      I1 => s_axi_rresp_i,
-      I2 => \^s_axi_rdata\(1),
-      O => \s_axi_rdata_i[31]_i_1_n_0\
-    );
 \s_axi_rdata_i_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
         port map (
       C => s_axi_aclk,
-      CE => '1',
-      D => \s_axi_rdata_i[0]_i_1_n_0\,
-      Q => \^s_axi_rdata\(0),
+      CE => s_axi_rresp_i,
+      D => Q(0),
+      Q => s_axi_rdata(0),
       R => \^ss\(0)
     );
 \s_axi_rdata_i_reg[31]\: unisim.vcomponents.FDRE
@@ -1053,9 +1034,9 @@ s_axi_bvalid_i_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => s_axi_aclk,
-      CE => '1',
-      D => \s_axi_rdata_i[31]_i_1_n_0\,
-      Q => \^s_axi_rdata\(1),
+      CE => s_axi_rresp_i,
+      D => Q(1),
+      Q => s_axi_rdata(1),
       R => \^ss\(0)
     );
 s_axi_rvalid_i_i_1: unisim.vcomponents.LUT5
@@ -1193,6 +1174,8 @@ entity soc_riscv_v2_axi_gpio_0_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end soc_riscv_v2_axi_gpio_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0_axi_lite_ipif is
@@ -1277,7 +1260,7 @@ entity soc_riscv_v2_axi_gpio_0_0_axi_gpio is
   attribute C_DOUT_DEFAULT_2 : string;
   attribute C_DOUT_DEFAULT_2 of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "32'b00000000000000000000000000000000";
   attribute C_FAMILY : string;
-  attribute C_FAMILY of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "zynq";
+  attribute C_FAMILY of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "zynquplus";
   attribute C_GPIO2_WIDTH : integer;
   attribute C_GPIO2_WIDTH of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is 32;
   attribute C_GPIO_WIDTH : integer;
@@ -1294,6 +1277,8 @@ entity soc_riscv_v2_axi_gpio_0_0_axi_gpio is
   attribute C_TRI_DEFAULT of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
   attribute C_TRI_DEFAULT_2 : string;
   attribute C_TRI_DEFAULT_2 of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "32'b11111111111111111111111111111111";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of soc_riscv_v2_axi_gpio_0_0_axi_gpio : entity is "yes";
   attribute ip_group : string;
@@ -1552,7 +1537,7 @@ entity soc_riscv_v2_axi_gpio_0_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of soc_riscv_v2_axi_gpio_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of soc_riscv_v2_axi_gpio_0_0 : entity is "soc_riscv_v1_axi_gpio_0_0,axi_gpio,{}";
+  attribute CHECK_LICENSE_TYPE of soc_riscv_v2_axi_gpio_0_0 : entity is "soc_riscv_v2_axi_gpio_0_0,axi_gpio,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of soc_riscv_v2_axi_gpio_0_0 : entity is "yes";
   attribute x_core_info : string;
@@ -1580,7 +1565,7 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0 is
   attribute C_DOUT_DEFAULT_2 : string;
   attribute C_DOUT_DEFAULT_2 of U0 : label is "32'b00000000000000000000000000000000";
   attribute C_FAMILY : string;
-  attribute C_FAMILY of U0 : label is "zynq";
+  attribute C_FAMILY of U0 : label is "zynquplus";
   attribute C_GPIO2_WIDTH : integer;
   attribute C_GPIO2_WIDTH of U0 : label is 32;
   attribute C_GPIO_WIDTH : integer;
@@ -1605,7 +1590,7 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0 is
   attribute x_interface_mode : string;
   attribute x_interface_mode of s_axi_aclk : signal is "slave S_AXI_ACLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";
   attribute x_interface_mode of s_axi_aresetn : signal is "slave S_AXI_ARESETN";
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -1625,7 +1610,7 @@ architecture STRUCTURE of soc_riscv_v2_axi_gpio_0_0 is
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
   attribute x_interface_mode of s_axi_awaddr : signal is "slave S_AXI";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN soc_riscv_v1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 99999001, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";

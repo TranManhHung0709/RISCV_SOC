@@ -2,14 +2,14 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Sat Mar 14 23:02:48 2026
+// Date        : Thu Mar 26 23:25:14 2026
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               e:/Vivado_projects/RISCV_SOC/RISCV_SOC.gen/sources_1/bd/soc_riscv_v2/ip/soc_riscv_v2_calc_ip_0_0/soc_riscv_v2_calc_ip_0_0_sim_netlist.v
 // Design      : soc_riscv_v2_calc_ip_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7z020clg484-1
+// Device      : xck26-sfvc784-2LV-c
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -24,7 +24,7 @@ module soc_riscv_v2_calc_ip_0_0
     ip_we,
     ip_din,
     ip_dout);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN soc_riscv_v2_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *) input clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst_n RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst_n;
   input [31:0]ip_real_addr;
   input ip_en;
@@ -83,72 +83,72 @@ module soc_riscv_v2_calc_ip_0_0_calc_ip
   wire math_result_carry__0_i_2_n_0;
   wire math_result_carry__0_i_3_n_0;
   wire math_result_carry__0_i_4_n_0;
+  wire math_result_carry__0_i_5_n_0;
+  wire math_result_carry__0_i_6_n_0;
+  wire math_result_carry__0_i_7_n_0;
+  wire math_result_carry__0_i_8_n_0;
   wire math_result_carry__0_n_0;
   wire math_result_carry__0_n_1;
   wire math_result_carry__0_n_2;
   wire math_result_carry__0_n_3;
+  wire math_result_carry__0_n_4;
+  wire math_result_carry__0_n_5;
+  wire math_result_carry__0_n_6;
+  wire math_result_carry__0_n_7;
   wire math_result_carry__1_i_1_n_0;
   wire math_result_carry__1_i_2_n_0;
   wire math_result_carry__1_i_3_n_0;
   wire math_result_carry__1_i_4_n_0;
+  wire math_result_carry__1_i_5_n_0;
+  wire math_result_carry__1_i_6_n_0;
+  wire math_result_carry__1_i_7_n_0;
+  wire math_result_carry__1_i_8_n_0;
   wire math_result_carry__1_n_0;
   wire math_result_carry__1_n_1;
   wire math_result_carry__1_n_2;
   wire math_result_carry__1_n_3;
+  wire math_result_carry__1_n_4;
+  wire math_result_carry__1_n_5;
+  wire math_result_carry__1_n_6;
+  wire math_result_carry__1_n_7;
   wire math_result_carry__2_i_1_n_0;
   wire math_result_carry__2_i_2_n_0;
   wire math_result_carry__2_i_3_n_0;
   wire math_result_carry__2_i_4_n_0;
-  wire math_result_carry__2_n_0;
+  wire math_result_carry__2_i_5_n_0;
+  wire math_result_carry__2_i_6_n_0;
+  wire math_result_carry__2_i_7_n_0;
+  wire math_result_carry__2_i_8_n_0;
   wire math_result_carry__2_n_1;
   wire math_result_carry__2_n_2;
   wire math_result_carry__2_n_3;
-  wire math_result_carry__3_i_1_n_0;
-  wire math_result_carry__3_i_2_n_0;
-  wire math_result_carry__3_i_3_n_0;
-  wire math_result_carry__3_i_4_n_0;
-  wire math_result_carry__3_n_0;
-  wire math_result_carry__3_n_1;
-  wire math_result_carry__3_n_2;
-  wire math_result_carry__3_n_3;
-  wire math_result_carry__4_i_1_n_0;
-  wire math_result_carry__4_i_2_n_0;
-  wire math_result_carry__4_i_3_n_0;
-  wire math_result_carry__4_i_4_n_0;
-  wire math_result_carry__4_n_0;
-  wire math_result_carry__4_n_1;
-  wire math_result_carry__4_n_2;
-  wire math_result_carry__4_n_3;
-  wire math_result_carry__5_i_1_n_0;
-  wire math_result_carry__5_i_2_n_0;
-  wire math_result_carry__5_i_3_n_0;
-  wire math_result_carry__5_i_4_n_0;
-  wire math_result_carry__5_n_0;
-  wire math_result_carry__5_n_1;
-  wire math_result_carry__5_n_2;
-  wire math_result_carry__5_n_3;
-  wire math_result_carry__6_i_1_n_0;
-  wire math_result_carry__6_i_2_n_0;
-  wire math_result_carry__6_i_3_n_0;
-  wire math_result_carry__6_i_4_n_0;
-  wire math_result_carry__6_n_1;
-  wire math_result_carry__6_n_2;
-  wire math_result_carry__6_n_3;
+  wire math_result_carry__2_n_4;
+  wire math_result_carry__2_n_5;
+  wire math_result_carry__2_n_6;
+  wire math_result_carry__2_n_7;
   wire math_result_carry_i_1_n_0;
   wire math_result_carry_i_2_n_0;
   wire math_result_carry_i_3_n_0;
   wire math_result_carry_i_4_n_0;
+  wire math_result_carry_i_5_n_0;
+  wire math_result_carry_i_6_n_0;
+  wire math_result_carry_i_7_n_0;
+  wire math_result_carry_i_8_n_0;
   wire math_result_carry_n_0;
   wire math_result_carry_n_1;
   wire math_result_carry_n_2;
   wire math_result_carry_n_3;
+  wire math_result_carry_n_4;
+  wire math_result_carry_n_5;
+  wire math_result_carry_n_6;
+  wire math_result_carry_n_7;
   wire [31:0]reg_A;
   wire \reg_A[31]_i_2_n_0 ;
   wire reg_A_1;
   wire [31:0]reg_B;
   wire reg_B_0;
   wire rst_n;
-  wire [3:3]NLW_math_result_carry__6_CO_UNCONNECTED;
+  wire [7:7]NLW_math_result_carry__2_CO_UNCONNECTED;
 
   LUT6 #(
     .INIT(64'hB0F0B030B0C0B000)) 
@@ -517,261 +517,229 @@ module soc_riscv_v2_calc_ip_0_0_calc_ip
         .I5(\ip_dout[31]_INST_0_i_3_n_0 ),
         .O(ip_dout[9]));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry
+  CARRY8 math_result_carry
        (.CI(1'b0),
-        .CO({math_result_carry_n_0,math_result_carry_n_1,math_result_carry_n_2,math_result_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[3:0]),
-        .O(data3[3:0]),
-        .S({math_result_carry_i_1_n_0,math_result_carry_i_2_n_0,math_result_carry_i_3_n_0,math_result_carry_i_4_n_0}));
+        .CI_TOP(1'b0),
+        .CO({math_result_carry_n_0,math_result_carry_n_1,math_result_carry_n_2,math_result_carry_n_3,math_result_carry_n_4,math_result_carry_n_5,math_result_carry_n_6,math_result_carry_n_7}),
+        .DI(reg_A[7:0]),
+        .O(data3[7:0]),
+        .S({math_result_carry_i_1_n_0,math_result_carry_i_2_n_0,math_result_carry_i_3_n_0,math_result_carry_i_4_n_0,math_result_carry_i_5_n_0,math_result_carry_i_6_n_0,math_result_carry_i_7_n_0,math_result_carry_i_8_n_0}));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__0
+  CARRY8 math_result_carry__0
        (.CI(math_result_carry_n_0),
-        .CO({math_result_carry__0_n_0,math_result_carry__0_n_1,math_result_carry__0_n_2,math_result_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[7:4]),
-        .O(data3[7:4]),
-        .S({math_result_carry__0_i_1_n_0,math_result_carry__0_i_2_n_0,math_result_carry__0_i_3_n_0,math_result_carry__0_i_4_n_0}));
+        .CI_TOP(1'b0),
+        .CO({math_result_carry__0_n_0,math_result_carry__0_n_1,math_result_carry__0_n_2,math_result_carry__0_n_3,math_result_carry__0_n_4,math_result_carry__0_n_5,math_result_carry__0_n_6,math_result_carry__0_n_7}),
+        .DI(reg_A[15:8]),
+        .O(data3[15:8]),
+        .S({math_result_carry__0_i_1_n_0,math_result_carry__0_i_2_n_0,math_result_carry__0_i_3_n_0,math_result_carry__0_i_4_n_0,math_result_carry__0_i_5_n_0,math_result_carry__0_i_6_n_0,math_result_carry__0_i_7_n_0,math_result_carry__0_i_8_n_0}));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__0_i_1
-       (.I0(reg_A[7]),
-        .I1(reg_B[7]),
+       (.I0(reg_A[15]),
+        .I1(reg_B[15]),
         .O(math_result_carry__0_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__0_i_2
-       (.I0(reg_A[6]),
-        .I1(reg_B[6]),
+       (.I0(reg_A[14]),
+        .I1(reg_B[14]),
         .O(math_result_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__0_i_3
-       (.I0(reg_A[5]),
-        .I1(reg_B[5]),
+       (.I0(reg_A[13]),
+        .I1(reg_B[13]),
         .O(math_result_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__0_i_4
-       (.I0(reg_A[4]),
-        .I1(reg_B[4]),
+       (.I0(reg_A[12]),
+        .I1(reg_B[12]),
         .O(math_result_carry__0_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__0_i_5
+       (.I0(reg_A[11]),
+        .I1(reg_B[11]),
+        .O(math_result_carry__0_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__0_i_6
+       (.I0(reg_A[10]),
+        .I1(reg_B[10]),
+        .O(math_result_carry__0_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__0_i_7
+       (.I0(reg_A[9]),
+        .I1(reg_B[9]),
+        .O(math_result_carry__0_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__0_i_8
+       (.I0(reg_A[8]),
+        .I1(reg_B[8]),
+        .O(math_result_carry__0_i_8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__1
+  CARRY8 math_result_carry__1
        (.CI(math_result_carry__0_n_0),
-        .CO({math_result_carry__1_n_0,math_result_carry__1_n_1,math_result_carry__1_n_2,math_result_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[11:8]),
-        .O(data3[11:8]),
-        .S({math_result_carry__1_i_1_n_0,math_result_carry__1_i_2_n_0,math_result_carry__1_i_3_n_0,math_result_carry__1_i_4_n_0}));
+        .CI_TOP(1'b0),
+        .CO({math_result_carry__1_n_0,math_result_carry__1_n_1,math_result_carry__1_n_2,math_result_carry__1_n_3,math_result_carry__1_n_4,math_result_carry__1_n_5,math_result_carry__1_n_6,math_result_carry__1_n_7}),
+        .DI(reg_A[23:16]),
+        .O(data3[23:16]),
+        .S({math_result_carry__1_i_1_n_0,math_result_carry__1_i_2_n_0,math_result_carry__1_i_3_n_0,math_result_carry__1_i_4_n_0,math_result_carry__1_i_5_n_0,math_result_carry__1_i_6_n_0,math_result_carry__1_i_7_n_0,math_result_carry__1_i_8_n_0}));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__1_i_1
-       (.I0(reg_A[11]),
-        .I1(reg_B[11]),
+       (.I0(reg_A[23]),
+        .I1(reg_B[23]),
         .O(math_result_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__1_i_2
-       (.I0(reg_A[10]),
-        .I1(reg_B[10]),
+       (.I0(reg_A[22]),
+        .I1(reg_B[22]),
         .O(math_result_carry__1_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__1_i_3
-       (.I0(reg_A[9]),
-        .I1(reg_B[9]),
+       (.I0(reg_A[21]),
+        .I1(reg_B[21]),
         .O(math_result_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__1_i_4
-       (.I0(reg_A[8]),
-        .I1(reg_B[8]),
+       (.I0(reg_A[20]),
+        .I1(reg_B[20]),
         .O(math_result_carry__1_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__1_i_5
+       (.I0(reg_A[19]),
+        .I1(reg_B[19]),
+        .O(math_result_carry__1_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__1_i_6
+       (.I0(reg_A[18]),
+        .I1(reg_B[18]),
+        .O(math_result_carry__1_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__1_i_7
+       (.I0(reg_A[17]),
+        .I1(reg_B[17]),
+        .O(math_result_carry__1_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__1_i_8
+       (.I0(reg_A[16]),
+        .I1(reg_B[16]),
+        .O(math_result_carry__1_i_8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__2
+  CARRY8 math_result_carry__2
        (.CI(math_result_carry__1_n_0),
-        .CO({math_result_carry__2_n_0,math_result_carry__2_n_1,math_result_carry__2_n_2,math_result_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[15:12]),
-        .O(data3[15:12]),
-        .S({math_result_carry__2_i_1_n_0,math_result_carry__2_i_2_n_0,math_result_carry__2_i_3_n_0,math_result_carry__2_i_4_n_0}));
+        .CI_TOP(1'b0),
+        .CO({NLW_math_result_carry__2_CO_UNCONNECTED[7],math_result_carry__2_n_1,math_result_carry__2_n_2,math_result_carry__2_n_3,math_result_carry__2_n_4,math_result_carry__2_n_5,math_result_carry__2_n_6,math_result_carry__2_n_7}),
+        .DI({1'b0,reg_A[30:24]}),
+        .O(data3[31:24]),
+        .S({math_result_carry__2_i_1_n_0,math_result_carry__2_i_2_n_0,math_result_carry__2_i_3_n_0,math_result_carry__2_i_4_n_0,math_result_carry__2_i_5_n_0,math_result_carry__2_i_6_n_0,math_result_carry__2_i_7_n_0,math_result_carry__2_i_8_n_0}));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__2_i_1
-       (.I0(reg_A[15]),
-        .I1(reg_B[15]),
+       (.I0(reg_A[31]),
+        .I1(reg_B[31]),
         .O(math_result_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__2_i_2
-       (.I0(reg_A[14]),
-        .I1(reg_B[14]),
+       (.I0(reg_A[30]),
+        .I1(reg_B[30]),
         .O(math_result_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__2_i_3
-       (.I0(reg_A[13]),
-        .I1(reg_B[13]),
+       (.I0(reg_A[29]),
+        .I1(reg_B[29]),
         .O(math_result_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry__2_i_4
-       (.I0(reg_A[12]),
-        .I1(reg_B[12]),
-        .O(math_result_carry__2_i_4_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__3
-       (.CI(math_result_carry__2_n_0),
-        .CO({math_result_carry__3_n_0,math_result_carry__3_n_1,math_result_carry__3_n_2,math_result_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[19:16]),
-        .O(data3[19:16]),
-        .S({math_result_carry__3_i_1_n_0,math_result_carry__3_i_2_n_0,math_result_carry__3_i_3_n_0,math_result_carry__3_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__3_i_1
-       (.I0(reg_A[19]),
-        .I1(reg_B[19]),
-        .O(math_result_carry__3_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__3_i_2
-       (.I0(reg_A[18]),
-        .I1(reg_B[18]),
-        .O(math_result_carry__3_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__3_i_3
-       (.I0(reg_A[17]),
-        .I1(reg_B[17]),
-        .O(math_result_carry__3_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__3_i_4
-       (.I0(reg_A[16]),
-        .I1(reg_B[16]),
-        .O(math_result_carry__3_i_4_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__4
-       (.CI(math_result_carry__3_n_0),
-        .CO({math_result_carry__4_n_0,math_result_carry__4_n_1,math_result_carry__4_n_2,math_result_carry__4_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[23:20]),
-        .O(data3[23:20]),
-        .S({math_result_carry__4_i_1_n_0,math_result_carry__4_i_2_n_0,math_result_carry__4_i_3_n_0,math_result_carry__4_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__4_i_1
-       (.I0(reg_A[23]),
-        .I1(reg_B[23]),
-        .O(math_result_carry__4_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__4_i_2
-       (.I0(reg_A[22]),
-        .I1(reg_B[22]),
-        .O(math_result_carry__4_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__4_i_3
-       (.I0(reg_A[21]),
-        .I1(reg_B[21]),
-        .O(math_result_carry__4_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__4_i_4
-       (.I0(reg_A[20]),
-        .I1(reg_B[20]),
-        .O(math_result_carry__4_i_4_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__5
-       (.CI(math_result_carry__4_n_0),
-        .CO({math_result_carry__5_n_0,math_result_carry__5_n_1,math_result_carry__5_n_2,math_result_carry__5_n_3}),
-        .CYINIT(1'b0),
-        .DI(reg_A[27:24]),
-        .O(data3[27:24]),
-        .S({math_result_carry__5_i_1_n_0,math_result_carry__5_i_2_n_0,math_result_carry__5_i_3_n_0,math_result_carry__5_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__5_i_1
-       (.I0(reg_A[27]),
-        .I1(reg_B[27]),
-        .O(math_result_carry__5_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__5_i_2
-       (.I0(reg_A[26]),
-        .I1(reg_B[26]),
-        .O(math_result_carry__5_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__5_i_3
-       (.I0(reg_A[25]),
-        .I1(reg_B[25]),
-        .O(math_result_carry__5_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__5_i_4
-       (.I0(reg_A[24]),
-        .I1(reg_B[24]),
-        .O(math_result_carry__5_i_4_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 math_result_carry__6
-       (.CI(math_result_carry__5_n_0),
-        .CO({NLW_math_result_carry__6_CO_UNCONNECTED[3],math_result_carry__6_n_1,math_result_carry__6_n_2,math_result_carry__6_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,reg_A[30:28]}),
-        .O(data3[31:28]),
-        .S({math_result_carry__6_i_1_n_0,math_result_carry__6_i_2_n_0,math_result_carry__6_i_3_n_0,math_result_carry__6_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__6_i_1
-       (.I0(reg_A[31]),
-        .I1(reg_B[31]),
-        .O(math_result_carry__6_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__6_i_2
-       (.I0(reg_A[30]),
-        .I1(reg_B[30]),
-        .O(math_result_carry__6_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__6_i_3
-       (.I0(reg_A[29]),
-        .I1(reg_B[29]),
-        .O(math_result_carry__6_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
-    math_result_carry__6_i_4
        (.I0(reg_A[28]),
         .I1(reg_B[28]),
-        .O(math_result_carry__6_i_4_n_0));
+        .O(math_result_carry__2_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__2_i_5
+       (.I0(reg_A[27]),
+        .I1(reg_B[27]),
+        .O(math_result_carry__2_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__2_i_6
+       (.I0(reg_A[26]),
+        .I1(reg_B[26]),
+        .O(math_result_carry__2_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__2_i_7
+       (.I0(reg_A[25]),
+        .I1(reg_B[25]),
+        .O(math_result_carry__2_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry__2_i_8
+       (.I0(reg_A[24]),
+        .I1(reg_B[24]),
+        .O(math_result_carry__2_i_8_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry_i_1
-       (.I0(reg_A[3]),
-        .I1(reg_B[3]),
+       (.I0(reg_A[7]),
+        .I1(reg_B[7]),
         .O(math_result_carry_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry_i_2
-       (.I0(reg_A[2]),
-        .I1(reg_B[2]),
+       (.I0(reg_A[6]),
+        .I1(reg_B[6]),
         .O(math_result_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry_i_3
-       (.I0(reg_A[1]),
-        .I1(reg_B[1]),
+       (.I0(reg_A[5]),
+        .I1(reg_B[5]),
         .O(math_result_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     math_result_carry_i_4
+       (.I0(reg_A[4]),
+        .I1(reg_B[4]),
+        .O(math_result_carry_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry_i_5
+       (.I0(reg_A[3]),
+        .I1(reg_B[3]),
+        .O(math_result_carry_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry_i_6
+       (.I0(reg_A[2]),
+        .I1(reg_B[2]),
+        .O(math_result_carry_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry_i_7
+       (.I0(reg_A[1]),
+        .I1(reg_B[1]),
+        .O(math_result_carry_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h6)) 
+    math_result_carry_i_8
        (.I0(reg_A[0]),
         .I1(reg_B[0]),
-        .O(math_result_carry_i_4_n_0));
+        .O(math_result_carry_i_8_n_0));
   LUT5 #(
     .INIT(32'hFFFE0000)) 
     \reg_A[31]_i_1 
