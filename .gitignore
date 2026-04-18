@@ -31,13 +31,14 @@ xsim.dir/
 
 # --- Project Specific Directories ---
 # Thư mục chứa dữ liệu biên dịch của Vivado (Rất lớn)
-<tên_project>.cache/
-<tên_project>.hw/
-<tên_project>.ip_user_files/
-<tên_project>.runs/
-<tên_project>.sim/
-<tên_project>.srcs/sources_1/bd/*/hdl/
-<tên_project>.gen/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/sources_1/bd/*/hdl/
+*.gen/
+*.tmp/
 
 # --- SDK / Vitis Files ---
 .metadata/
